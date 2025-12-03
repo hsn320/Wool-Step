@@ -9,11 +9,15 @@ html{
     }
 }
 header{
-    margin: 50px 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     .topBar{
+        margin: 30px 20px 0;
         border: 2px solid #76A490;
         border-radius: 20px;
-    background: #fff;
+        background: #fff;
         .topBorder{
             display: flex;
             align-items: center;
@@ -33,6 +37,7 @@ header{
 }
 main{
     margin: 30px 20px 0;
+    padding: 100px 0 100px;
     .help{
         display: flex;
         align-items: center;
@@ -87,7 +92,11 @@ main{
     }
 }
 footer{
-    height: 110px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 105px;
     background: #fff;
     padding: 20px;
     .bottomBar{
