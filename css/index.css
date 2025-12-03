@@ -1,5 +1,6 @@
 html{
     font-size: 63.25%;
+    background: #F4F8F6;
     img{
         display: block;
     }
@@ -12,6 +13,7 @@ header{
     .topBar{
         border: 2px solid #76A490;
         border-radius: 20px;
+    background: #fff;
         .topBorder{
             display: flex;
             align-items: center;
@@ -80,6 +82,25 @@ main{
                     font-size: 1.5rem;
                     font-weight: 600;
                 }
+            }
+        }
+    }
+}
+footer{
+    height: 110px;
+    background: #fff;
+    padding: 20px;
+    .bottomBar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        .footer-icon{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                padding-bottom: 15px;
             }
         }
     }
