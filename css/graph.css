@@ -36,7 +36,36 @@ header{
     }
 }
 main{
-    
+    margin: 30px 20px 0;
+    padding: 100px 0 100px;
+    .graph{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .graph-icon{
+            width: 35px;
+        }
+        h2{
+            color: #003D23;
+            font-size: 2rem;
+        }
+    }
+    .trust-graph{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        img{
+            width: 315px;
+        }
+    }
+    .character{
+        display: flex;
+        justify-content: center;
+        margin-top: 45px;
+        img{
+            width: 330px;
+        }
+    }
 }
 footer{
     position: fixed;
