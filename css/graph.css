@@ -13,6 +13,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
     .topBar{
         margin: 30px 20px 0;
         border: 2px solid #76A490;
@@ -30,6 +31,11 @@ header{
                 .icon{
                     width: 40px;
                     height: 40px;
+                }
+            }
+            .logo{
+                img{
+                    width: 73px;
                 }
             }
         }
