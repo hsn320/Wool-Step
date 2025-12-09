@@ -1,0 +1,185 @@
+html{
+    font-size: 63.25%;
+    background: #F4F8F6;
+    img{
+        display: block;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    .topBar{
+        margin: 30px 20px 0;
+        border: 2px solid #76A490;
+        border-radius: 20px;
+        background: #fff;
+        .topBorder{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 60px;
+            margin: 0 auto;
+            gap: 25%;
+            h1{
+                .icon{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .logo{
+                img{
+                    width: 73px;
+                }
+            }
+        }
+    }
+}
+main{
+    margin: 30px 20px 0;
+    padding: 100px 0 100px;
+    .help{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .help-icon{
+            width: 35px;
+        }
+        h2{
+            color: #003D23;
+            font-size: 2rem;
+        }
+    }
+    .help-list{
+        border: 1px solid #88C0A8;
+        border-radius: 5px;
+        width: 90%;
+        height: 170px;
+        margin: 30px auto;
+        padding-top: 25px ;
+        .help-name{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 25px;
+            img{
+                width: 65px;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+        .Btns{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            .btn{
+                width: 120px;
+                height: 35px;
+                background: #88C0A8;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 35px;
+                box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.25);
+                a{
+                    color: #fff;
+                    display: block;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.bg-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 44px 20px;
+    border-radius: 10px;
+    z-index: 101;
+    width: 310px;
+    height: 310px;
+    text-align: center;
+    img{
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .textBtn{
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p{
+            font-size: 2rem;
+            line-height: 20px;
+            padding: 30px 0;
+        }
+        .Btns{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            .btn{
+                width: 120px;
+                height: 35px;
+                background: #88C0A8;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 35px;
+                box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.25);
+                a{
+                    color: #fff;
+                    display: block;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 105px;
+    background: #fff;
+    padding: 20px;
+    z-index: 100;
+    .bottomBar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        .footer-icon{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
