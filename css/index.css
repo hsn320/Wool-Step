@@ -1,6 +1,6 @@
 html{
     font-size: 63.25%;
-    background: #F4F8F6;
+    background: #FAFFFD;
     img{
         display: block;
     }
@@ -62,7 +62,8 @@ main{
         width: 90%;
         height: 170px;
         margin: 30px auto;
-        padding-top: 25px ;
+        padding-top: 25px;
+        background: #fff;
         .help-name{
             display: flex;
             align-items: center;
@@ -107,10 +108,10 @@ footer{
     background: #fff;
     padding: 20px;
     .bottomBar{
+    
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap: 40px;
         .footer-icon{
             display: flex;
             flex-direction: column;

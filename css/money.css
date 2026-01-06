@@ -1,6 +1,6 @@
 html{
     font-size: 62.5%;
-    background: #F4F8F6;
+    background: #FAFFFD;
     img{
         display: block;
     }
@@ -95,6 +95,7 @@ main{
         margin: 0 auto;
         padding: 11px 15px;
         width: 95%;
+        background: #fff;
         .assets{
             display: flex;
             gap: 10px;
@@ -175,6 +176,7 @@ main{
             margin: 0 auto;
             padding: 5px 15px;
             width: 95%;
+            background: #fff;
             .manage-list{
                 display: flex;
                 gap: 14px;
@@ -206,9 +208,8 @@ footer{
     padding: 20px;
     .bottomBar{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap: 40px;
         .footer-icon{
             display: flex;
             flex-direction: column;
