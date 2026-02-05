@@ -44,59 +44,58 @@ header{
 main{
     margin: 30px 20px 0;
     padding: 100px 0 100px;
-    .help{
+}
+.help{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .help-icon{
+        width: 35px;
+    }
+    h2{
+        color: #003D23;
+        font-size: 2rem;
+    }
+}
+.help-list{
+    border: 1px solid #88C0A8;
+    border-radius: 5px;
+    width: 90%;
+    height: 170px;
+    margin: 30px auto;
+    padding-top: 25px;
+    background: #fff;
+    .help-name{
         display: flex;
         align-items: center;
-        gap: 15px;
-        .help-icon{
-            width: 35px;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 25px;
+        img{
+            width: 65px;
         }
-        h2{
-            color: #003D23;
+        p{
             font-size: 2rem;
         }
     }
-    .help-list{
-        border: 1px solid #88C0A8;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .challenge-btn , .finish-btn{
+        width: 120px;
+        height: 35px;
+        background: #88C0A8;
         border-radius: 5px;
-        width: 90%;
-        height: 170px;
-        margin: 30px auto;
-        padding-top: 25px;
-        background: #fff;
-        .help-name{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 50px;
-            margin-bottom: 25px;
-            img{
-                width: 65px;
-            }
-            p{
-                font-size: 2rem;
-            }
-        }
-        .Btns{
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            .btn{
-                width: 120px;
-                height: 35px;
-                background: #88C0A8;
-                border-radius: 5px;
-                text-align: center;
-                line-height: 35px;
-                box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.25);
-                a{
-                    color: #fff;
-                    display: block;
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                }
-            }
-        }
+        text-align: center;
+        line-height: 35px;
+        box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.25);
+        color: #fff;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 }
 footer{
@@ -108,17 +107,67 @@ footer{
     background: #fff;
     padding: 20px;
     .bottomBar{
-    
         display: flex;
         justify-content: space-around;
         align-items: center;
         .footer-icon{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex: 1;
+            text-align: center;
+            a{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+            }
             img{
+                display: block;
                 padding-bottom: 15px;
             }
+            p{
+                color: #003D23;
+            }
         }
+    }
+}
+
+dialog {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: 30%;
+    max-width: 800px;
+    max-height: 600px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    p{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 35px;
+    }
+}
+dialog::backdrop {
+    background: rgb(0 0 0 / 0.75);
+    backdrop-filter: blur(5px);
+}
+.Buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .yes , .no{
+        width: 40%;
+        height: 30%;
+        background: #88C0A8;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 35px;
+        box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.25);
+        color: #fff;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 }

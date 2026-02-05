@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, width=375, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
     <title>お手伝いリスト</title>
 </head>
 <body>
@@ -43,13 +44,9 @@
                     <img src="img/square.png" alt="お手伝い画像">
                     <p>お皿洗い</p>
                 </div>
-                <div class="Btns">
-                    <div class="btn">
-                        <a href="index_challenge.html">挑戦する</a>
-                    </div>
-                    <div class="btn">
-                        <a href="#">完了</a>
-                    </div>
+                <div class="btns">
+                    <button data-task="お皿洗い" type="button" class="challenge-btn">挑戦する</button>
+                    <button data-task="完了" type="button" class="finish-btn">完了</button>
                 </div>
             </div>
 
@@ -59,13 +56,9 @@
                     <img src="img/square.png" alt="お手伝い画像">
                     <p>洗濯物を畳む</p>
                 </div>
-                <div class="Btns">
-                    <div class="btn">
-                        <a href="index_challenge.html">挑戦する</a>
-                    </div>
-                    <div class="btn">
-                        <a href="#">完了</a>
-                    </div>
+                <div class="btns">
+                    <button data-task="洗濯物を畳む" type="button" class="challenge-btn">挑戦する</button>
+                    <button data-task="完了" type="button" class="finish-btn">完了</button>
                 </div>
             </div>
 
@@ -75,13 +68,9 @@
                     <img src="img/square.png" alt="お手伝い画像">
                     <p>部屋の片づけ</p>
                 </div>
-                <div class="Btns">
-                    <div class="btn">
-                        <a href="index_challenge.html">挑戦する</a>
-                    </div>
-                    <div class="btn">
-                        <a href="#">完了</a>
-                    </div>
+                <div class="btns">
+                    <button data-task="洗濯物を畳む" type="button" class="challenge-btn">挑戦する</button>
+                    <button data-task="完了" type="button" class="finish-btn">完了</button>
                 </div>
             </div>
 
@@ -91,13 +80,9 @@
                     <img src="img/square.png" alt="お手伝い画像">
                     <p>お風呂掃除</p>
                 </div>
-                <div class="Btns">
-                    <div class="btn">
-                        <a href="index_challenge.html">挑戦する</a>
-                    </div>
-                    <div class="btn">
-                        <a href="#">完了</a>
-                    </div>
+                <div class="btns">
+                    <button data-task="洗濯物を畳む" type="button" class="challenge-btn">挑戦する</button>
+                    <button data-task="完了" type="button" class="finish-btn">完了</button>
                 </div>
             </div>
 
@@ -107,13 +92,9 @@
                     <img src="img/square.png" alt="お手伝い画像">
                     <p>ゴミ捨て</p>
                 </div>
-                <div class="Btns">
-                    <div class="btn">
-                        <a href="index_challenge.html">挑戦する</a>
-                    </div>
-                    <div class="btn">
-                        <a href="#">完了</a>
-                    </div>
+                <div class="btns">
+                    <button data-task="洗濯物を畳む" type="button" class="challenge-btn">挑戦する</button>
+                    <button data-task="完了" type="button" class="finish-btn">完了</button>
                 </div>
             </div>
 
@@ -125,26 +106,46 @@
     <footer>
         <div class="bottomBar">
             <div class="footer-icon">
-                <a href="money.html"><img src="img/moneyB.png" alt="おこづかい" height="50"></a>
-                <p>おこづかい</p>
+                <a href="money.html">
+                    <img src="img/moneyB.png" alt="おこづかい" height="50">
+                    <p>おこづかい</p>
+                </a>
             </div>
             <div class="footer-icon">
-                <a href="graph.html"><img src="img/graphB.png" alt="信頼度" height="50"></a>
-                <p>信頼度</p>
+                <a href="graph.html">
+                    <img src="img/graphB.png" alt="信頼度" height="50">
+                    <p>信頼度</p>
+                </a>
             </div>
             <div class="footer-icon">
-                <a href="index.html"><img src="img/helpA.png" alt="お手伝い" height="50"></a>
-                <p>お手伝い</p>
+                <a href="index.html">
+                    <img src="img/helpA.png" alt="お手伝い" height="50">
+                    <p>お手伝い</p>
+                </a>
             </div>
             <div class="footer-icon">
-                <a href="plan.html"><img src="img/planB.png" alt="プラン" height="50"></a>
-                <p>プラン</p>
+                <a href="plan.html">
+                    <img src="img/planB.png" alt="プラン" height="50">
+                    <p>プラン</p>
+                </a>
             </div>
             <div class="footer-icon">
-                <a href="#"><img src="img/mypageB.png" alt="マイページ" height="50"></a>
-                <p>マイページ</p>
+                <a href="#">
+                    <img src="img/mypageB.png" alt="マイページ" height="50">
+                    <p>マイページ</p>
+                </a>
             </div>
         </div>
     </footer>
+
+    <!-- モーダルダイアログ -->
+    <dialog id="modalDialog">
+        <p id="dialogMessage"></p>
+        <div class="Buttons">
+            <button id="okBtn" type="button" class="yes">する</button>
+            <button id="cancelBtn" type="button" class="no">しない</button>
+        </div>
+    </dialog>
+
 </body>
 </html>
