@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/plan_create.css">
     <link rel="stylesheet" href="css/ress.css">
+    <script defer src="js/plan.js"></script>
     <title>投資プラン作成</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
         <div class="QandA">
             <p>誰に投資をする？</p>
             <div class="answer-box box1">
-                <input type="text" placeholder="入力してね！" class="answer">
+                <input type="text" placeholder="入力してね！" id="planName" class="answer">
             </div>
         </div>
 
@@ -48,7 +49,7 @@
         <div class="QandA">
             <p>何円投資をする？</p>
             <div class="answer-box box1">
-                <input type="text" class="answer">
+                <input type="text" id="amount" class="answer">
                 <span>円</span>
             </div>
         </div>
@@ -57,7 +58,7 @@
         <div class="QandA">
             <p>目標金額を決めよう！</p>
             <div class="answer-box box1">
-                <input type="text" class="answer">
+                <input type="text" id="goal" class="answer">
                 <span>円</span>
             </div>
         </div>
@@ -67,7 +68,7 @@
             <p>投資の期間はどうする？</p>
             <p class="subQ">設定した後でも変えれるよ！</p>
             <div class="answer-box box1">
-                <select name="period" id="period-select" class="answer">
+                <select name="period" id="period" class="answer">
                     <option value="">選択してね</option>
                     <option value="one-week">1週間</option>
                     <option value="one-month">1ヶ月</option>
@@ -82,13 +83,13 @@
             <p>お金をためて何をしたい？</p>
             <p class="subQ">ほしいものやしたい事を書いてみよう！</p>
             <div class="answer-box box2">
-                <input type="text" class="answer">
+                <input type="text" id="save" class="answer">
             </div>
         </div>
 
         <!-- 作成ボタン -->
         <div class="create">
-            <a href="plan_add.html" class="createBtn">作成する</a>
+            <button onclick="location.href='plan_add.html'" type="button" id="createBtn">作成する</button>
         </div>
 
     </main>

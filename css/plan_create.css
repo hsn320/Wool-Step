@@ -87,19 +87,13 @@ main{
                 right: 30px;
             }
         }
-        .box1{
-            height: 45px;
-        }
-        .box2{
-            height: 70px;
-        }
     }
     .create{
         display: flex;
         justify-content: center;
         text-align: center;
         margin: 40px 0;
-        .createBtn{
+        button{
             background: #88C0A8;
             border: 1px solid #76A490;
             border-radius: 10px;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/plan_add.css">
     <link rel="stylesheet" href="css/ress.css">
+    <script defer src="js/plan_create.js"></script>
     <title>投資プラン一覧</title>
 </head>
 <body>
@@ -35,71 +36,38 @@
         </div>
 
         <!-- 投資1セット -->
-        <section class="plan-content">
+        <section class="plan-content" id="plan-list">
 
             <!-- 投資先 -->
             <div class="plan-list">
-                <h2>お母さん投資</h2>
+                <p>投資先：<span id="viewPlanName"></span></p>
             </div>
 
             <!-- 初期投資額 -->
             <div class="plan-list">
-                <p>初期投資額</p>
-                <div class="money">
-                    <span class="name">500</span>
-                    <span>円</span>
-                </div>
+                <p>初期投資額：<span id="viewAmount"></span> 円</p>
             </div>
 
             <!-- 目標金額 -->
             <div class="plan-list">
-                <p>目標金額</p>
-                <div class="money">
-                    <span class="name">5000</span>
-                    <span>円</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- 投資2セット -->
-        <section class="plan-content">
-
-            <!-- 投資先 -->
-            <div class="plan-list">
-                <h2>お父さん投資</h2>
+                <p>目標金額：<span id="viewGoal"></span></p>
             </div>
 
-            <!-- 初期投資額 -->
+            <!-- 投資期間 -->
             <div class="plan-list">
-                <p>初期投資額</p>
-                <div class="money">
-                    <span class="name">100</span>
-                    <span>円</span>
-                </div>
-            </div>
-
-            <!-- 目標金額 -->
-            <div class="plan-list">
-                <p>目標金額</p>
-                <div class="money">
-                    <span class="name">3000</span>
-                    <span>円</span>
-                </div>
+                <p>投資期間：<span id="viewPeriod"></span></p>
             </div>
 
             <!-- 欲しいもの -->
             <div class="plan-list">
-                <p>欲しいもの</p>
-                <div class="money">
-                    <span class="name">ゲーム</span>
-                </div>
+                <p>欲しいもの：<span id="viewSave"></span></p>
             </div>
         </section>
 
         <!-- 追加ボタン -->
         <div class="add-content">
             <div class="add">
-                <a href="plan_create.html">追加する</a>
+                <button onclick="location.href='plan_create.html'" type="button">追加する</button>
             </div>
         </div>
 
