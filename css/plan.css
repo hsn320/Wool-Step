@@ -35,7 +35,7 @@ header{
             }
             .logo{
                 img{
-                    width: 73px;
+                    width: 65px;
                 }
             }
         }
@@ -59,7 +59,7 @@ main{
     .add-content{
         display: flex;
         justify-content: center;
-        padding: 110px 0 150px;
+        padding: 120px 0 150px;
         .add{
             background: #88C0A8;
             border: 1px solid #76A490;
@@ -76,11 +76,15 @@ main{
             }
         }
     }
+    .kyara{
+        display: flex;
+        justify-content: center;
+    }
     .comment{
         position: fixed;
         bottom: 100px;
         img{
-            width: 95%;
+            height: 150px;
         }
     }
 }
@@ -97,11 +101,22 @@ footer{
         justify-content: space-around;
         align-items: center;
         .footer-icon{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex: 1;
+            text-align: center;
+            a{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+            }
             img{
+                display: block;
                 padding-bottom: 15px;
+            }
+            p{
+                color: #003D23;
             }
         }
     }

@@ -35,7 +35,7 @@ header{
             }
             .logo{
                 img{
-                    width: 73px;
+                    width: 65px;
                 }
             }
         }
@@ -85,7 +85,7 @@ main{
     justify-content: center;
     gap: 30px;
     .challenge-btn , .finish-btn{
-        width: 120px;
+        width: 37%;
         height: 35px;
         background: #88C0A8;
         border-radius: 5px;
