@@ -19,10 +19,10 @@ document.addEventListener("click", (e) => {
     step = "confirm";
 
     const task = btn.dataset.task;
-    message.textContent = `${task}に挑戦しますか？`;
+    message.textContent = `${task}をやってみる？`;
 
-    okBtn.textContent = "する";
-    noBtn.textContent = "しない";
+    okBtn.textContent = "やる";
+    noBtn.textContent = "やらない";
     noBtn.style.display = "inline-block";
 
     if (!dialog.open) dialog.showModal();
@@ -46,7 +46,7 @@ document.addEventListener("click", (e) => {
     step = "confirm";
     activeChallengeBtn = challengeBtn;
 
-    message.textContent = "完了にしますか？";
+    message.textContent = "完了にする？";
 
     okBtn.textContent = "する";
     noBtn.textContent = "しない";
@@ -62,7 +62,7 @@ okBtn.onclick = () => {
         dialog.close();
 
         activeChallengeBtn = currentChallengeBtn;
-        activeChallengeBtn.textContent = "挑戦中";
+        activeChallengeBtn.textContent = "おてつだい中";
         activeChallengeBtn.classList.add("in-progress");
         activeChallengeBtn.style.backgroundColor = "#1f6e4c";
 
@@ -82,7 +82,7 @@ okBtn.onclick = () => {
         else {
             dialog.close();
 
-            activeChallengeBtn.textContent = "挑戦する";
+            activeChallengeBtn.textContent = "やってみる";
             activeChallengeBtn.classList.remove("in-progress");
             activeChallengeBtn = null;
         }
