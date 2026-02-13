@@ -42,35 +42,50 @@ header{
     }
 }
 main{
-    margin: 30px 20px 0;
-    padding: 100px 0 100px;
-    .graph{
+    margin: 25px 20px 0;
+    padding: 100px 0 10px;
+}
+.graph{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .graph-icon{
+        width: 35px;
+    }
+    .Ttl{
         display: flex;
         align-items: center;
-        gap: 15px;
-        .graph-icon{
-            width: 35px;
-        }
-        h2{
-            color: #003D23;
-            font-size: 2rem;
+        gap: 10px;
+        img{
+            width: 25px;
         }
     }
-    .trust-graph{
-        display: flex;
-        justify-content: center;
-        margin-top: 35px;
-        img{
-            width: 315px;
-        }
+    span{
+        color: #003D23;
+        font-size: 1.2rem;
     }
-    .character{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        img{
-            width: 330px;
-        }
+    h2{
+        color: #003D23;
+        font-size: 2rem;
+    }
+}
+.trust-graph{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    img{
+        width: 315px;
+    }
+}
+.character{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    img{
+        height: 18%;
+        position: fixed;
+        bottom: 115px;
     }
 }
 footer{
