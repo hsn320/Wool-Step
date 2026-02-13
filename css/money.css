@@ -101,6 +101,18 @@ main{
             gap: 10px;
             border-bottom: 1px solid #88C0A8;
             padding-bottom: 10px;
+            .Ttl{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+            .subTtl{
+                display: flex;
+                flex-direction: column;
+            }
+            span{
+                font-size: 1.2rem;
+            }
             h2{
                 font-size: 1.5rem;
                 color: #003D23;
@@ -108,6 +120,7 @@ main{
         }
         .assets-list{
             display: flex;
+            align-items: center;
             gap: 14px;
             border-bottom: 1px solid #88C0A8;
             padding: 20px 0;
@@ -119,6 +132,13 @@ main{
             span{
                 margin-left: auto;
                 padding-right: 10px;
+            }
+            .subTitle{
+                display: flex;
+                flex-direction: column;
+                .sub{
+                    font-size: 1.2rem;
+                }
             }
         }
         .assets-list:last-child{
