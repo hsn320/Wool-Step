@@ -64,6 +64,7 @@ okBtn.onclick = () => {
         activeChallengeBtn = currentChallengeBtn;
         activeChallengeBtn.textContent = "挑戦中";
         activeChallengeBtn.classList.add("in-progress");
+        activeChallengeBtn.style.backgroundColor = "#1f6e4c";
 
         return;
     }
