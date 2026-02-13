@@ -77,6 +77,7 @@ okBtn.onclick = () => {
 
             okBtn.textContent = "OK";
             noBtn.style.display = "none";
+            activeChallengeBtn.style.backgroundColor = "";
         } 
         else {
             dialog.close();
