@@ -61,18 +61,18 @@ main{
     border: 1px solid #88C0A8;
     border-radius: 5px;
     width: 90%;
-    height: 170px;
+    height: 50%;
     margin: 30px auto;
-    padding-top: 25px;
+    padding: 25px 0;
     background: #fff;
     .help-name{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        gap: 15%;
         margin-bottom: 25px;
         img{
-            width: 65px;
+            width: 60px;
         }
         p{
             font-size: 2rem;
