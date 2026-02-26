@@ -1,12 +1,24 @@
+body {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        "Noto Sans JP",
+        "Yu Gothic",
+        Meiryo,
+        sans-serif;
+}
 html{
-    font-size: 63.25%;
+    font-size: 62.5%;
     background: #FAFFFD;
-    img{
-        display: block;
-    }
-    a{
-        text-decoration: none;
-    }
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
 }
 header{
     position: fixed;
@@ -63,7 +75,7 @@ main{
     width: 90%;
     height: 50%;
     margin: 30px auto;
-    padding: 25px 0;
+    padding: 30px 0;
     background: #fff;
     .help-name{
         display: flex;
